@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.home-section {
+  min-height: 70vh;
+  margin-top: 100px;
+  padding: 4em;
+}
+
+.intro-section {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Open Sans", sans-serif;
+  height: 100%;
+}
+
+.intro-section > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 50%;
+}
+
+.intro-section > div > h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.intro-section > div > p {
+  font-size: 1.2rem;
+  color: #525f7f;
+}
+.intro-section img {
+  height: 35%;
+  width: 35%;
+}
+
+.search-bar-container {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.input-search-bar-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  padding: 0.7em;
+  margin: 0.5em 0;
+  border: solid 1px;
+  border-color: #cad1d7;
+  border-radius: 7px;
+}
+.input-search-bar-container svg {
+  width: 20px;
+  height: 20px;
+}
+.input-search-bar-container > input {
+  min-width: 350px;
+  height: 20px;
+  border: none;
+  outline: none;
+}
+.search-bar-container > button {
+  color: #fff;
+  background-color: #ea3c12;
+  text-align: center;
+  padding-inline: 2em;
+  height: 45px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.08);
+}
+.select-location {
+  min-width: 80px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  align-self: flex-start;
+  padding: 0.7em;
+  margin: 0.5em 0;
+  border-color: #cad1d7;
+  border-radius: 7px;
+  outline: none;
+}
+@media screen and (max-width: 767px) {
+  .intro-section {
+    flex-direction: column;
+  }
+  .intro-section img {
+    display: none;
+  }
+  .intro-section > div {
+    align-items: center;
+    max-width: 100%;
+  }
+  .intro-section > div > h1 {
+    font-size: 2rem;
+  }
+  .search-bar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .input-search-bar-container > input {
+    min-width: 250px;
+  }
+}
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  display: none;
+}
+
+input[type="search"]::-moz-search-clear-button {
+  display: none;
+}
+/* index.css or the corresponding CSS file */
+.search-bar-container > div {
+  position: relative;
+}
+.search-bar-container > div > ul {
+  position: absolute;
+  right: 0;
+  left: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+}
+.appliance-item {
+  padding: 8px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer; /* Change cursor to pointer when hovering over items */
+  transition: background-color 0.3s ease;
+}
+
+.appliance-item:hover {
+  background-color: #e6e6e6; /* Light gray background on hover */
+  cursor: pointer; /* Ensure cursor stays as a pointer */
+}
