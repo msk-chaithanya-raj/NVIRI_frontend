@@ -31,6 +31,22 @@ This is the frontend for the appliance repair service, built with React and styl
   - `App.js`: Main component where all the other components are rendered.
   - `App.test.js`: Contains tests for the app.
   - `index.css`: Global CSS styles.
+ 
+### Setup
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/msk-chaithanya-raj/NVIRI_frontend
+cd frontend
+```
+### 2. Install dependencies
+```bash
+npm install
+```
+### 3. Run the server
+```bash
+npm start
+```
 
 ## Tech Stack
 
