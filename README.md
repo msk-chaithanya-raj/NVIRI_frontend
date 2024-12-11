@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Appliance Repair Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the frontend for the appliance repair service, built with React and styled using Bootstrap. It allows users to interact with the backend API, manage bookings, view available technicians, and more.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Components**:
+  - **BookingSteps**: Step-by-step guide for booking a service.
+  - **Footer**: Footer with necessary links and information.
+  - **Home**: Main page displaying available services, technicians, and more.
+  - **Login**: User login form for authentication.
+  - **Navbar**: Navigation bar for easy access to different sections of the app.
+  - **Services**: Displays available services.
+  - **TechnicianCarousel**: Carousel displaying technician details.
+  - **TestimonialCarousel**: Carousel displaying user testimonials.
 
-### `npm start`
+## Folder Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- `public/`: Contains public assets, including HTML files.
+- `src/`: Contains all source code for the React app.
+  - `components/`: React components that build the UI.
+    - `BookingSteps/`: Contains the booking steps component.
+    - `Footer/`: Contains the footer component.
+    - `Home/`: Contains the home page component.
+    - `Login/`: Contains the login form component.
+    - `Navbar/`: Contains the navigation bar component.
+    - `Services/`: Contains the services component.
+    - `TechnicianCarousel/`: Contains the carousel for displaying technician details.
+    - `TestimonialCards/`: Contains the cards for displaying testimonials.
+  - `App.css`: Global styles for the app.
+  - `App.js`: Main component where all the other components are rendered.
+  - `App.test.js`: Contains tests for the app.
+  - `index.css`: Global CSS styles.
+ 
+### Setup
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 1. Clone the repository
+```bash
+git clone https://github.com/msk-chaithanya-raj/NVIRI_frontend
+cd frontend
+```
+### 2. Install dependencies
+```bash
+npm install
+```
+### 3. Run the server
+```bash
+npm start
+```
 
-### `npm test`
+## Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React**: JavaScript library for building user interfaces.
+- **Bootstrap**: Frontend framework for responsive design and styling.
+- **CSS**: Styling for the frontend components.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
